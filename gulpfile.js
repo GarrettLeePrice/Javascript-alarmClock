@@ -12,13 +12,12 @@ var lib = require('bower-files')({
       "main": [
         "less/bootstrap.less",
         "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
-      ]
+        "dist/js/bootstrap.js"      ]
     }
   }
 });
-var browserSync = require('browser-sync').create();
 
+var browserSync = require('browser-sync').create();
 var buildProduction = utilities.env.production;
 
 gulp.task('concatInterface', function() {

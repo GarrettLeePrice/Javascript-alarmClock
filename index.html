@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The Time Is <span id="time_display"></span></h1>
+      </div>
+      <h2>Set an Alarm</h2>
+      <form id="set_alarm">
+        <div class="form-group">
+          <input type="text" id="alarm_time" placeholder="00:00:00">
+        </div>
+        <button class="btn" type="submit" id="alarm_time_set">Set Alarm</button>
+      </form>
+      <br>
+      <button class="btn btn-warning" type="button" id="alarm_dismiss">Dismiss Alarm</button>
+      <div id="alarm_display">
+        <div class="jumbotron">
+          <h1>WAKEY WAKEY!</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
